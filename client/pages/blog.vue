@@ -2,12 +2,14 @@
     <h2>Блог</h2>
 
     <main>
-        <article v-for="post in posts" :key="post.id">
+        <div class="post">
+            <article v-for="(post, index) in posts" :key="post.id">
             <h3>{{ post.title }}</h3>
             <img :src=base_url+post.img.url :alt=post.img.alternativeText>
             <p>{{ post.desc }}</p>
-            <NuxtLink to="#">Подробнее</NuxtLink>
-        </article>
+            <NuxtLink to="'/post/' + index">Подробнее</NuxtLink>
+            </article>
+        </div>
     </main>
 
 </template> 
