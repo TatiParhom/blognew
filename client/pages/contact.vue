@@ -1,3 +1,5 @@
 <template>
-    <h2>Контакы</h2>
+    <main>
+        <h2>Контакты</h2>
+    </main>
 </template>
