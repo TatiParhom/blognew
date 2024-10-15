@@ -38,7 +38,9 @@
   
   article {
     background-color: #f5f5f5;
+    color: gray;
     padding: 10px;
+    border-radius: 10px;
   
     display: flex;
           flex-direction: column;
@@ -46,7 +48,9 @@
   }
   
   article img {
-    width: 100%;
+    
+    width: 250px;
+    height: 250px;
   }
   
   article p {

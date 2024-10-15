@@ -1,10 +1,11 @@
 <template>
+  <NuxtLoadingIndicator duration="5000" />
   <Navbar />
   <NuxtPage />
   <img src="" alt="">
 </template>
 
-<script setup>
+<script>
   const base = 'http://localhost:1337' 
   const api = await $fetch(`${base}/api/config?populate=*`)
   const config = api.data
