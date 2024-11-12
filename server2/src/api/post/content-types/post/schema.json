@@ -38,6 +38,10 @@
       "relation": "manyToMany",
       "target": "api::category.category",
       "inversedBy": "posts"
+    },
+    "virus": {
+      "type": "integer",
+      "default": 0
     }
   }
 }
